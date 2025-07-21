@@ -398,7 +398,6 @@ nav > div {
 .friend-img {
   width: 120px;
   height: 120px;
-  border-radius: 50%;      /* Makes the container circular */
   overflow: hidden;        /* Crops anything outside the shape */
   display: flex;
   align-items: center;
