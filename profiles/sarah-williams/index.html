@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fakebook</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="icon" href="/assets/img/logos/fakebook-logo.svg" type="image/svg+xml">
+  
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <div class="nav-left">
+          <a href="/index.html" class="nav-logo">
+            <img src="/assets/img/logos/fakebook-logo.svg" alt="Fakebook Logo">
+          </a>
+          <div class="search"> 
+              <img class="search-icon" src="/assets/img/icons/search.svg" alt="search">
+          </div>
+        </div>
+        <div class="nav-links main-nav">
+          <button class="navlinks active" onclick="openMainTab(event, 'home')" id="defaultOpen">
+          <img class="nav-icons"  src="/assets/img/icons/home-outline.svg" 
+              data-icon="/assets/img/icons/home-outline.svg"  data-icon-active="/assets/img/icons/home-fill.svg" alt="Home">
+          </button>
+          <button class="navlinks">
+            <img class="nav-icons" src="/assets/img/icons/video-outline.svg" alt="Videos">
+          </button>
+          <button class="navlinks">
+            <img class="nav-icons" src="/assets/img/icons/marketplace-outline.svg" alt="Marketplace">
+          </button>
+          <button class="navlinks">
+            <img class="nav-icons" src="/assets/img/icons/groups-outline.svg" alt="Groups">
+          </button>
+          <button class="navlinks">
+            <img class="nav-icons game-icon" src="/assets/img/icons/games-outline.svg" alt="Games">
+          </button>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#"><img class="nav-icons" src="/assets/img/icons/menu-black.svg" alt="Menu"></a></li>
+          <li><a href="#"><img class="nav-icons" src="/assets/img/icons/messages-black.svg" alt="Messages"></a></li>
+          <li><a href="#"><img class="nav-icons" src="/assets/img/icons/notification-black.svg" alt="Notifications"></a></li>
+          <li class="profile-icon"><a href="#"><img class="nav-icons" src="/assets/img/icons/cybepathways-icon-white.svg" alt="CyberPathways Icon"></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="fakebook-page tabcontent" id="home">
+      <section class="fakebook-header">
+        <div class="header-img">
+          <img src="/profiles/sarah-williams/assets/img/soccer-group.jpg">
+        </div>
+        <div class="profile-header">
+          <div class="profile-img">
+            <img src="/profiles/sarah-williams/assets/img/sarah-williams.jpg">
+          </div>
+          <div class="profile-title">
+            <h1>Sarah Williams</h1>
+            <div class="friends-sum">
+              <p><span>642</span> friends</p>
+            </div>
+          </div>
+          <div class="profile-btns">
+            <div class="add-btn btn">
+              <img src="/assets/img/icons/add-white.svg" class="btn-icon">
+              Add Friend</div>
+            <div class="message-btn btn">
+                  <img src="/assets/img/icons/messages-black.svg" class="btn-icon">
+              Message</div>
+            <div class="more-btn btn" >
+              <img src="/assets/img/icons/arrow-down-s-line.svg">
+            </div>
+          </div>
+        </div>
+        <div class="border"></div>
+      </section>
+
+      <section class="profile-nav">
+        <div class="tab">
+          <button class="tablinks active" onclick="openProfileTab(event, 'posts')" id="defaultOpen">Posts</button>
+          <button class="tablinks">About</button>
+          <button class="tablinks">Friends</button>
+          <button class="tablinks">Photos</button>
+          <button class="tablinks">Videos</button>
+          <button class="tablinks">Check-ins</button>
+          <button class="tablinks">More <img src="/assets/img/icons/arrow-down-s-fill.svg"></button>
+        </div>
+
+        <div class="btn more-dots">
+          <img src="/assets/img/icons/more-fill.svg">
+        </div>
+      </section>
+
+      <section class="profile-section">
+        <div id="posts" class="profile-tabcontent active">
+          <!-- Left Sidebar -->
+          <div class="left-content">
+            <!-- Intro -->
+            <div class="fb-section intro"><h1>Intro</h1>
+              <p> Proud mum of Ally, a sporty and cheerful 12-year-old! <br>
+                Big supporter of the Eagles Soccer Club and always cheering from the sidelines. <br>
+                Love sharing our family moments and school adventures.</p>
+              <div class="intro-line">
+                <img src="/assets/img/icons/pronouns-color.svg"> she/her
+              </div>
+              <div class="intro-line">
+                <img src="/assets/img/icons/briefcase-4-fill.svg"><p>Primary School Teacher at <br><span>Sunshine Primary School</span></p>
+              </div>
+              <div class="intro-line">
+                <img src="/assets/img/icons/education-color.svg"><p>Studied Bachelor of Education (Primary) at <span>Queensland University of Technology</span></p>
+              </div>
+              <div class="intro-line">
+                <img src="/assets/img/icons/lives-color.svg"><p>Lives in <span>Brisbane, Queensland, Australia</span></p>
+              </div>
+              <div class="intro-line">
+                <img src="/assets/img/icons/heart-3-fill.svg"><p>Married to<span> James Williams</span></p>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+              <ul class="footer-list">
+                <li class="footer-bold">Privacy</li>
+                <li class="footer-bold">Terms</li>
+                <li class="footer-bold">Advertising</li>
+                <li class="footer-bold">Ad Choices</li>
+                <li class="footer-bold">Cookies</li>
+                <li>More</li>
+              </ul>
+              <p>&copy; 2025 CyberPathways</p>
+              <div class="disclaimer">
+                <p>Built by CyberPathways for OSINT simulation.</p>
+                <p>Fakebook are fictional entities created for open-source intelligence (OSINT) training purposes.</p>
+                <p>They are not affiliated with Meta Platforms, Inc. or any real-world company.</p>
+                <p>All names, logos, and content are used in parody.</p>
+              </div>
+            </footer>
+          </div>
+
+          <!-- Right Sidebar -->
+          <div class="right-content">
+            <div class="fb-section fb-section-title">
+              <h1>Posts</h1>
+              <div class="filters-btn btn">
+                  <img src="/assets/img/icons/filter-black.svg">
+                  Filters</div>
+            </div>
+
+            <!-- POST ONE -->
+            <div class="fb-section post-temp">
+              <div class="post-header">
+                <div class="profile-img">
+                  <img src="/profiles/sarah-williams/assets/img/sarah-williams.jpg">
+                </div>
+                <div class="post-info">
+                  <div>
+                    <h3>Sarah Williams</h3> <span>is with </span> <h3>James Williams</h3> <span>and</span> <h3>Ally Williams</h3>
+                  </div>
+                   <div>
+                    <p>March 15 at 4:31 PM </p>
+                    <span>·</span> 
+                    <img src="/assets/img/icons/earth-fill.svg">
+                  </div>
+                </div>
+                  <div class="btn more-dots">
+                      <img src="/assets/img/icons/more-fill.svg">
+                  </div>
+              </div>
+              <div class="words-post">
+                <p></p>So proud of Ally in her Eagles Soccer Club uniform today! <br>
+                She scored 2 goals in the big game! ⚽️💪 <span>#EaglesPride</span> <span>#SoccerStar</span></p>
+              </div>
+              <div class="post">
+                <img src="/profiles/sarah-williams/assets/img/soccer-group.jpg">
+              </div>
+              <div class="post-summary">
+                <div class="emojis-grp">
+                  <div class="emoji-pair">
+                    <img src="/assets/img/emojis/love.svg" class="emoji">
+                    <img src="/assets/img/emojis/emoji-love.svg" class="emoji">
+                    <img src="/assets/img/emojis/emoji-shock.svg" class="emoji">
+                  </div>
+                    <p class="emoji-count">136</p>
+                </div>
+                <p class="post-comments">18 Comments</p>
+              </div>
+              <div class="post-footer">
+                <div class="share-btn">
+                  <img src="/assets/img/icons/share-outline.png">
+                  <p>Share</p></div>
+              </div>
+            </div>
+
+            <!-- POST TWO -->
+            <div class="fb-section post-temp">
+              <div class="post-header">
+                <div class="profile-img">
+                  <img src="/profiles/sarah-williams/assets/img/sarah-williams.jpg">
+                </div>
+                <div class="post-info">
+                  <div>
+                    <h3>Sarah Williams</h3> <span>tagged</span> <h3>Ally Williams</h3>
+                  </div>
+                  <div>
+                      <p>June 20 at 8:57 PM </p>
+                      <span>·</span> 
+                      <img src="/assets/img/icons/earth-fill.svg">
+                    </div>
+                </div>
+                  <div class="btn more-dots">
+                      <img src="/assets/img/icons/more-fill.svg">
+                  </div>
+              </div>
+              <div class="words-post">
+                <p>Happy 12th Birthday to my amazing Ally! 🎉🎂 You’re growing up so fast; can’t wait to see all the wonderful things this year 
+                  brings! 💖  
+                  <span>#BirthdayGirl</span> <span>#ProudMum</span></p>
+              </div>
+              <div class="post-summary">
+                <div class="emojis-grp">
+                  <div class="emoji-pair">
+                    <img src="/assets/img/emojis/like.svg" class="emoji">
+                    <img src="/assets/img/emojis/love.svg" class="emoji">
+                  </div>
+                  <p>47</p>
+                </div>
+                <p class="post-comments">22 Comments</p>
+              </div>
+              <div class="post-footer">
+                <div class="share-btn">
+                  <img src="/assets/img/icons/share-outline.png">
+                  <p>Share</p></div>
+              </div>
+            </div>
+
+          </div>
+        <!-- Other Tabs -->
+        <div id="about" class="tabcontent"><h3>About</h3><p>About content...</p></div>
+        <div id="friends" class="tabcontent"><h3>Friends</h3><p>Friends content...</p></div>
+        <div id="photos" class="tabcontent"><h3>Photos</h3><p>Photos content...</p></div>
+        <div id="videos" class="tabcontent"><h3>Videos</h3><p>Videos content...</p></div>
+        <div id="checkins" class="tabcontent"><h3>Check-ins</h3><p>Check-ins content...</p></div>
+        <div id="more" class="tabcontent"><h3>More</h3><p>More content...</p></div>
+      </section>
+    </div>
+  </div>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

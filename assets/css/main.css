@@ -884,3 +884,61 @@ footer {
   font-size: 9.5px;
   padding-top: 4px;
 }
+
+
+/*============*/
+.friends-list-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.friends-list-main .fb-section {
+  box-shadow: none;
+}
+
+.friends-list-grid {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+.friends-list-item {
+  width: 500px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 1.5px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.friends-list-item,
+.friends-list-info  {
+  display: flex;
+  gap: 20px;
+}
+
+.friends-list-info {
+  flex-direction: column;
+  row-gap: 2px;
+  justify-content: center;
+}
+
+.friends-list-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+}
+
+.friends-list-info .friend-name {
+    font-size: 17px;
+    color: var(--text-color)
+}
+
+.friends-list-info  .friend-name-qty {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--date-color)
+}
+
+.friends-list-item .more-dots {
+  margin-left: 6.5rem;
+}
