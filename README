@@ -1,0 +1,65 @@
+# 📘 Fakebook - OSINT
+
+A fictional, Facebook-style social media clone built for **open-source intelligence (OSINT) training**. Fakebook gives learners realistic fake profiles — complete with posts, photos, friends, life events, and relationship details — to practice OSINT reconnaissance techniques in a safe, self-contained environment with zero real-world privacy impact.
+
+**🔗 Live demo:** [fakebook-osint.netlify.app](https://fakebook-osint.netlify.app/)
+
+## About
+
+Fakebook was built by [Cyber Pathways](https://cyberpathways.com.au/) as a training ground for students and cybersecurity learners to practice open-source intelligence gathering — the skill of piecing together publicly available information into a fuller picture of a person or organisation.
+
+Every profile, name, photo, post, comment, and "friend" on the site is entirely fictional. The layout parodies a well-known social platform purely so the OSINT exercises feel realistic, but **Fakebook has no affiliation with Meta Platforms, Inc. or any real company or person.**
+
+> **Note:** This project is for educational and training purposes only. It is a static front-end mock-up — there are no real user accounts, no real data collection, and no backend services processing personal information.
+
+## Features
+
+- 👤 Multiple fictional profile pages with detailed "About" info (job history, education, relationship status, hometown, etc.)
+- 📝 Realistic timeline of posts, photos, life events, and check-ins to practice piecing together a timeline
+- 🖼️ Photo and video galleries per profile
+- 👥 Friends lists linking between fictional profiles, useful for practicing relationship-mapping
+- 💬 Comment threads and reactions on posts for context clues
+- 📱 Responsive layout resembling a familiar social media UI
+
+## How It's Used
+
+1. Browse a fictional profile as you would a real social media page.
+2. Practice OSINT skills such as building a timeline, mapping relationships, and identifying patterns (locations, workplaces, routines) from publicly "posted" information.
+3. Use findings to complete challenge questions or scenarios set by an instructor or cyber challenge organiser.
+
+## Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| **HTML5** | Page and profile structure |
+| **CSS** | Styling and responsive layout |
+| **JavaScript** | Interactivity |
+
+## Project Structure
+
+```
+├── index.html          # Main feed / friends landing page
+├── profiles/            # Individual fictional profile pages
+│   └── jessica-b-taylor/
+├── assets/              # Images, icons, logos, and other static assets
+├── LICENSE
+└── README.md
+```
+
+## Getting Started
+
+Clone the repo and open `index.html` in your browser — no build step or dependencies required.
+
+```bash
+git clone https://github.com/hexL3t/fakebook.git
+cd fakebook
+open index.html
+```
+
+## Disclaimer
+
+Fakebook profiles are entirely fictional entities created for OSINT training purposes. They are not affiliated with Meta Platforms, Inc. or any real-world company. All names, logos, and content are used in parody.
+
+## License
+
+Licensed under the [GNU General Public License v3.0](LICENSE).
